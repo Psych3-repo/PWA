@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="manifest" href="/manifest.webmanifest">
+        <script src="scriptJs/dom-to-image.js"></script>    
+        <script src="scriptJs/FileSaver.js"></script>
+        <script src="scriptJs/myApp.js"></script>
+        <link rel = "stylesheet" href = "css/style.css">
+</head>
+    <body style = "background : rgb(236, 230, 230)">
+        <div class = "center">
+            <canvas id="myCanvas" draggable="true" width="1200" height="900" style="border:1px solid black; background: #fff ;margin: 0px;">Your browser does not support the HTML canvas tag.</canvas>
+        </div>
+        <div class = "center">
+            <input type="file" id="image1" name="img" onchange="loadFile(event)" accept="image/*" multiple  style="font-size: 25px;">
+            <button id='downBtn' onclick="CanvasDownload" style="font-size: 25px;">Save Image</button>
+        </div>
+
+
+        <script src="scriptJs/script.js"></script>
+        
+    </body>
+</html>
